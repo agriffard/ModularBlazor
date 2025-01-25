@@ -61,3 +61,11 @@ App.MapRazorComponents<App>()
 - Move `Data` folder to `ModularBlazor.Data`.
 - Add reference of `ModularBlazor.Data` to `ModularBlazor.Account` project.
 - Change namespace `ModularBlazor.App.Data` to `ModularBlazor.Data`.
+
+## Step 5
+
+- Create project `ModularBlazor.Layout`
+- Move `Layout` folder to `ModularBlazor.Layout` project.
+- Add reference of `ModularBlazor.Layout` to `ModularBlazor.Account` project and to `ModularBlazor.App` application.
+- Change namespaces to use `ModularBlazor.Layout.Components.Layout` where needed (`Routes`, `Account\Shared\ManageLayout`).
+ 

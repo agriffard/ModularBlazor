@@ -12,9 +12,4 @@
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.1" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\..\ModularBlazor.Data\ModularBlazor.Data.csproj" />
-	  <ProjectReference Include="..\ModularBlazor.Layout\ModularBlazor.Layout.csproj" />
-	</ItemGroup>
-
 </Project>
