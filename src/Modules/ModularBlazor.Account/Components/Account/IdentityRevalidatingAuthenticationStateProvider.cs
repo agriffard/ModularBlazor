@@ -5,12 +5,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using ModularBlazor.App.Data;
 
-namespace ModularBlazor.App.Components.Account
+namespace ModularBlazor.Account.Components.Account
 {
     // This is a server-side AuthenticationStateProvider that revalidates the security stamp for the connected user
     // every 30 minutes an interactive circuit is connected.
-    internal sealed class IdentityRevalidatingAuthenticationStateProvider(
-            ILoggerFactory loggerFactory,
+    // internal sealed => public
+    public class IdentityRevalidatingAuthenticationStateProvider(
+    ILoggerFactory loggerFactory,
             IServiceScopeFactory scopeFactory,
             IOptions<IdentityOptions> options)
         : RevalidatingServerAuthenticationStateProvider(loggerFactory)

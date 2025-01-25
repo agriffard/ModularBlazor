@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using ModularBlazor.App.Data;
 
-namespace ModularBlazor.App.Components.Account
+namespace ModularBlazor.Account.Components.Account
 {
-    internal sealed class IdentityUserAccessor(UserManager<ApplicationUser> userManager, IdentityRedirectManager redirectManager)
+    // internal sealed => public
+    public class IdentityUserAccessor(UserManager<ApplicationUser> userManager, IdentityRedirectManager redirectManager)
     {
         public async Task<ApplicationUser> GetRequiredUserAsync(HttpContext context)
         {

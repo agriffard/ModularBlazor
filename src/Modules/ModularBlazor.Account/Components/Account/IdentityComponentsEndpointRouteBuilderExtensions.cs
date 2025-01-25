@@ -6,13 +6,14 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
-using ModularBlazor.App.Components.Account.Pages;
-using ModularBlazor.App.Components.Account.Pages.Manage;
+using ModularBlazor.Account.Components.Account.Pages;
+using ModularBlazor.Account.Components.Account.Pages.Manage;
 using ModularBlazor.App.Data;
 
 namespace Microsoft.AspNetCore.Routing
 {
-    internal static class IdentityComponentsEndpointRouteBuilderExtensions
+    // internal sealed => public
+    public static class IdentityComponentsEndpointRouteBuilderExtensions
     {
         // These endpoints are required by the Identity Razor components defined in the /Components/Account/Pages directory of this project.
         public static IEndpointConventionBuilder MapAdditionalIdentityEndpoints(this IEndpointRouteBuilder endpoints)

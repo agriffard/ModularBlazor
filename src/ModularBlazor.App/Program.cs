@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ModularBlazor.App.Components;
-using ModularBlazor.App.Components.Account;
+using ModularBlazor.Account.Components.Account;
 using ModularBlazor.App.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -56,7 +56,8 @@ app.UseAntiforgery();
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+    .AddInteractiveServerRenderMode()
+    .AddAdditionalAssemblies(Routes.AdditionalAssemblies.ToArray());
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();

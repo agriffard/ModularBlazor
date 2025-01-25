@@ -1,9 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 
-namespace ModularBlazor.App.Components.Account
+namespace ModularBlazor.Account.Components.Account
 {
-    internal sealed class IdentityRedirectManager(NavigationManager navigationManager)
+    // internal sealed => public
+    public class IdentityRedirectManager(NavigationManager navigationManager)
     {
         public const string StatusCookieName = "Identity.StatusMessage";
 
