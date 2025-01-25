@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using ModularBlazor.App.Data;
+using ModularBlazor.Data;
 
 namespace ModularBlazor.Account.Components.Account
 {

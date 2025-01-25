@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using ModularBlazor.Account.Components.Account.Pages;
 using ModularBlazor.Account.Components.Account.Pages.Manage;
-using ModularBlazor.App.Data;
+using ModularBlazor.Data;
 
 namespace Microsoft.AspNetCore.Routing
 {

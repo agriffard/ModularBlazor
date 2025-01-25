@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ModularBlazor.App.Components;
 using ModularBlazor.Account.Components.Account;
-using ModularBlazor.App.Data;
+using ModularBlazor.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

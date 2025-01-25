@@ -53,3 +53,11 @@ App.MapRazorComponents<App>()
 
 - Move `Components\Layout` folder to `ModularBlazor.Account` project (`ManageLayout` needs the main Layout).
 - Move `Data` folder to `ModularBlazor.Account` project (`ApplicationDbContext`, `ApplicationUser`, ...).
+
+## Step 4
+
+- Create project `ModularBlazor.Data`
+- Add Entity Framework Core packages to `ModularBlazor.Data.csproj`.
+- Move `Data` folder to `ModularBlazor.Data`.
+- Add reference of `ModularBlazor.Data` to `ModularBlazor.Account` project.
+- Change namespace `ModularBlazor.App.Data` to `ModularBlazor.Data`.

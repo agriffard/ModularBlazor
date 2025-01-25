@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Identity;
-using ModularBlazor.App.Data;
+using ModularBlazor.Data;
 
 namespace ModularBlazor.Account.Components.Account
 {
