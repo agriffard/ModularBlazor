@@ -41,7 +41,7 @@ public partial class Routes
 }
 ```
 
-- In `Program.cs`, call `AdditionalAssemblies`:
+- In `Program.cs`, call the `AddAdditionalAssemblies()` method in order to load the module assemblies in the main application:
 
 ```
 App.MapRazorComponents<App>()
@@ -68,4 +68,7 @@ App.MapRazorComponents<App>()
 - Move `Layout` folder to `ModularBlazor.Layout` project.
 - Add reference of `ModularBlazor.Layout` to `ModularBlazor.Account` project and to `ModularBlazor.App` application.
 - Change namespaces to use `ModularBlazor.Layout.Components.Layout` where needed (`Routes`, `Account\Shared\ManageLayout`).
- 
+
+## Credits
+
+Inspired by [BlazorAdmin](https://github.com/aishang2015/BlazorAdmin)
